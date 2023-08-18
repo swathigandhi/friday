@@ -1,0 +1,29 @@
+package com.thuesday.police.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.thuesday.police.Service.PoliceService;
+import com.thuesday.police.dao.PoliceDao;
+
+public class policeController 
+{
+	@Autowired
+    PoliceDao policeDao;
+
+	@Autowired
+	PoliceService policeService;
+
+	@PostMapping("/signin")
+	public RcreateAccount(@RequestBody BuyerDto buyerDto) {
+
+		buyerService.createAccount(buyerDto);
+		ResponseStructure<BuyerDto> responseStructure = new ResponseStructure<>();
+		responseStructure.setStatusCode(HttpStatus.CREATED.value());
+		responseStructure.setMessage("account created");
+		responseStructure.setData(buyerDto);
+		return responseStructure;
+	}
+
+
+
+}

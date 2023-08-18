@@ -1,0 +1,17 @@
+package com.thuesday.police.Service;
+
+
+
+import com.thuesday.police.dao.PoliceDao;
+import com.thuesday.police.dto.PoliceDto;
+
+public class PoliceService 
+{
+	
+		PoliceDao policeDao;
+		public String createAccount(PoliceDto policeDto) {
+			// TODO Auto-generated method stub
+			return policeDao.createAccount(policeDto);
+
+		}
+}

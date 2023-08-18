@@ -1,0 +1,5 @@
+package com.thuesday.police.repository;
+
+public interface Policerepository {
+
+}

@@ -1,0 +1,9 @@
+package com.thuesday.police.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.thuesday.police.dto.PoliceDto;
+
+public interface Policerepository extends JpaRepository<PoliceDto, Integer> {
+
+}

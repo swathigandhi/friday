@@ -1,0 +1,11 @@
+package com.thuesday.police.repository;
+
+import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
+import org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension;
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactory;
+import org.springframework.stereotype.Repository;
+@Repository
+public class PoliceRepository extends 
+{
+
+}

@@ -1,0 +1,5 @@
+package com.thuesday.police.dto;
+
+public class PoliceDto {
+
+}

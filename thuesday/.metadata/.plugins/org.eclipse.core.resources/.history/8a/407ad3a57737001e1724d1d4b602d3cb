@@ -1,0 +1,19 @@
+package com.thuesday.police.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.thuesday.police.dao.PoliceDao;
+import com.thuesday.police.dto.PoliceDto;
+
+@Component
+public class PoliceService 
+{
+	@Autowired
+		PoliceDao policeDao;
+		public String createAccount(PoliceDto policeDto) {
+			// TODO Auto-generated method stub
+			return policeDao.createAccount(policeDto);
+
+		}
+}
